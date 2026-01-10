@@ -6,7 +6,7 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-8">
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div className="font-mono text-sm uppercase tracking-widest">
-            <span className="opacity-70">&copy; 2025</span>{" "}
+            <span className="opacity-70">&copy; 2026</span>{" "}
             <Link href="/artysta" className="transition-opacity hover:opacity-70">
               TWÓJSAMUEL
             </Link>

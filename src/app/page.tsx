@@ -9,7 +9,7 @@ export default function Home() {
           PRESJA
         </h1>
         <p className="font-mono text-xl uppercase tracking-widest opacity-70">
-          TWÓJSAMUEL — 2025
+          TWÓJSAMUEL — 2026
         </p>
       </header>
 
@@ -21,8 +21,7 @@ export default function Home() {
         <div className="grid gap-8 md:grid-cols-2">
           <div className="border-3 border-current p-6">
             <p className="font-mono text-sm leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Album
-              &quot;Presja&quot; to podróż przez różne formy presji, z którymi mierzymy się
+              Album &quot;Presja&quot; to podróż przez różne formy presji, z którymi mierzymy się
               na co dzień. Od presji czasu, przez finansową, aż po społeczną —
               każdy utwór odkrywa inny aspekt tego wszechobecnego uczucia.
             </p>
@@ -84,7 +83,7 @@ export default function Home() {
       {/* Song List */}
       <section>
         <h2 className="mb-8 font-mono text-2xl font-bold uppercase tracking-widest">
-          UTWORY
+          PRESJA
         </h2>
         <SongList />
       </section>
