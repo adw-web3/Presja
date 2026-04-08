@@ -6,7 +6,7 @@ import { ThemeToggle } from "./ThemeToggle";
 export function Navigation() {
   return (
     <nav className="border-b-3 border-current">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 md:px-6">
         <Link
           href="/"
           className="font-mono text-2xl font-bold uppercase tracking-widest transition-opacity hover:opacity-70"

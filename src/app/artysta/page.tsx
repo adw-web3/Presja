@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function ArtistPage() {
   return (
-    <div className="mx-auto max-w-4xl px-6 py-12">
+    <div className="mx-auto max-w-4xl px-4 py-12 md:px-6">
       {/* Back link */}
       <Link
         href="/"
@@ -24,38 +25,38 @@ export default function ArtistPage() {
         </h1>
       </header>
 
-      {/* Photo placeholder */}
+      {/* Photo */}
       <section className="mb-12">
-        <div className="flex aspect-square items-center justify-center border-3 border-current md:aspect-video">
-          <span className="font-mono text-sm uppercase tracking-widest opacity-50">
-            ZDJĘCIE ARTYSTY
-          </span>
+        <div className="border-3 border-current">
+          <Image
+            src="/zdjecie-artysty.PNG"
+            alt="TwójSamuel"
+            width={896}
+            height={896}
+            className="w-full"
+            priority
+          />
         </div>
       </section>
 
       {/* Bio */}
       <section className="mb-12">
         <h2 className="mb-4 font-mono text-xl font-bold uppercase tracking-widest">
-          BIOGRAFIA
+          ARTYSTA
         </h2>
         <div className="space-y-4 border-3 border-current p-6">
           <p className="font-mono text-sm leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            TwójSamuel działa muzycznie od pięciu lat. W 2025 roku zorganizował
+            koncert pod własnym billboardem, a jego utwór o kryptowalutach
+            został zaprezentowany podczas jednego z ważniejszych wydarzeń
+            blockchainowych w Polsce przed publicznością liczącą ponad tysiąc
+            osób.
           </p>
           <p className="font-mono text-sm leading-relaxed">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
-          </p>
-          <p className="font-mono text-sm leading-relaxed">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo.
+            Zawodowo jest social media ekspertem i ma na koncie milionowe
+            wyświetlenia w internecie. W 2026 roku postanowił świadomie
+            wykorzystać swoje doświadczenie, aby rozwijać własną drogę jako
+            artysta.
           </p>
         </div>
       </section>
@@ -67,7 +68,7 @@ export default function ArtistPage() {
         </h2>
         <div className="flex flex-wrap gap-3">
           <a
-            href="#"
+            href="https://open.spotify.com/artist/3geIvmq6KlhGzEWFR8MoZ9"
             target="_blank"
             rel="noopener noreferrer"
             className="border-3 border-current px-6 py-3 font-mono text-sm uppercase tracking-widest transition-colors hover:bg-foreground hover:text-background"
@@ -75,7 +76,7 @@ export default function ArtistPage() {
             SPOTIFY
           </a>
           <a
-            href="#"
+            href="https://music.apple.com/pl/artist/tw%C3%B3jsamuel/1692947466"
             target="_blank"
             rel="noopener noreferrer"
             className="border-3 border-current px-6 py-3 font-mono text-sm uppercase tracking-widest transition-colors hover:bg-foreground hover:text-background"
@@ -83,15 +84,7 @@ export default function ArtistPage() {
             APPLE MUSIC
           </a>
           <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border-3 border-current px-6 py-3 font-mono text-sm uppercase tracking-widest transition-colors hover:bg-foreground hover:text-background"
-          >
-            TIDAL
-          </a>
-          <a
-            href="#"
+            href="https://music.youtube.com/channel/UCCbQkSIBkSpG4qubx8uk4lQ"
             target="_blank"
             rel="noopener noreferrer"
             className="border-3 border-current px-6 py-3 font-mono text-sm uppercase tracking-widest transition-colors hover:bg-foreground hover:text-background"
@@ -99,7 +92,23 @@ export default function ArtistPage() {
             YOUTUBE MUSIC
           </a>
           <a
-            href="#"
+            href="https://tidal.com/artist/39798811"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border-3 border-current px-6 py-3 font-mono text-sm uppercase tracking-widest transition-colors hover:bg-foreground hover:text-background"
+          >
+            TIDAL
+          </a>
+          <a
+            href="https://www.deezer.com/pl/artist/215949845"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border-3 border-current px-6 py-3 font-mono text-sm uppercase tracking-widest transition-colors hover:bg-foreground hover:text-background"
+          >
+            DEEZER
+          </a>
+          <a
+            href="https://soundcloud.com/twojsamuel-music"
             target="_blank"
             rel="noopener noreferrer"
             className="border-3 border-current px-6 py-3 font-mono text-sm uppercase tracking-widest transition-colors hover:bg-foreground hover:text-background"
@@ -116,7 +125,7 @@ export default function ArtistPage() {
         </h2>
         <div className="flex flex-wrap gap-3">
           <a
-            href="#"
+            href="https://www.instagram.com/twojsamuel/"
             target="_blank"
             rel="noopener noreferrer"
             className="border-3 border-current bg-foreground px-6 py-3 font-mono text-sm uppercase tracking-widest text-background transition-colors hover:bg-background hover:text-foreground"
@@ -124,7 +133,7 @@ export default function ArtistPage() {
             INSTAGRAM
           </a>
           <a
-            href="#"
+            href="https://www.tiktok.com/@twojsamuel"
             target="_blank"
             rel="noopener noreferrer"
             className="border-3 border-current bg-foreground px-6 py-3 font-mono text-sm uppercase tracking-widest text-background transition-colors hover:bg-background hover:text-foreground"
@@ -132,40 +141,32 @@ export default function ArtistPage() {
             TIKTOK
           </a>
           <a
-            href="#"
+            href="https://www.youtube.com/@twojsamuel1744"
             target="_blank"
             rel="noopener noreferrer"
             className="border-3 border-current bg-foreground px-6 py-3 font-mono text-sm uppercase tracking-widest text-background transition-colors hover:bg-background hover:text-foreground"
           >
-            TWITTER / X
-          </a>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border-3 border-current bg-foreground px-6 py-3 font-mono text-sm uppercase tracking-widest text-background transition-colors hover:bg-background hover:text-foreground"
-          >
-            FACEBOOK
+            YOUTUBE
           </a>
         </div>
       </section>
 
       {/* Contact */}
-      <section>
+      <section id="kontakt">
         <h2 className="mb-4 font-mono text-xl font-bold uppercase tracking-widest">
           KONTAKT
         </h2>
         <div className="border-3 border-current p-6">
           <p className="font-mono text-sm leading-relaxed">
-            <span className="opacity-70">BOOKING:</span>{" "}
-            <a href="mailto:booking@twojsamuel.pl" className="underline">
-              booking@twojsamuel.pl
+            <span className="opacity-70">MANAGEMENT:</span>{" "}
+            <a href="mailto:faustyna@twojapresja.pl" className="underline">
+              faustyna@twojapresja.pl
             </a>
           </p>
           <p className="font-mono text-sm leading-relaxed">
-            <span className="opacity-70">MANAGEMENT:</span>{" "}
-            <a href="mailto:management@twojsamuel.pl" className="underline">
-              management@twojsamuel.pl
+            <span className="opacity-70">ARTIST:</span>{" "}
+            <a href="mailto:samuel@twojapresja.pl" className="underline">
+              samuel@twojapresja.pl
             </a>
           </p>
         </div>

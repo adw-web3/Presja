@@ -2,7 +2,7 @@ import { SongList } from "@/components/SongList";
 
 export default function Home() {
   return (
-    <div className="mx-auto max-w-6xl px-6 py-12">
+    <div className="mx-auto max-w-6xl px-4 py-12 md:px-6">
       {/* Hero */}
       <header className="mb-16 border-b-3 border-current pb-16">
         <h1 className="mb-4 font-mono text-6xl font-bold uppercase tracking-widest md:text-8xl">
@@ -18,74 +18,121 @@ export default function Home() {
         <h2 className="mb-8 font-mono text-2xl font-bold uppercase tracking-widest">
           O ALBUMIE
         </h2>
-        <div className="grid gap-8 md:grid-cols-2">
-          <div className="border-3 border-current p-6">
-            <p className="font-mono text-sm leading-relaxed">
-              Album &quot;Presja&quot; to podróż przez różne formy presji, z którymi mierzymy się
-              na co dzień. Od presji czasu, przez finansową, aż po społeczną —
-              każdy utwór odkrywa inny aspekt tego wszechobecnego uczucia.
-            </p>
-          </div>
-          <div className="border-3 border-current p-6">
-            <p className="mb-4 font-mono text-sm uppercase tracking-widest opacity-70">
-              STRUKTURA UTWORÓW
-            </p>
-            <p className="font-mono text-sm leading-relaxed">
-              Każdy utwór składa się z trzech zwrotek, które prowadzą słuchacza
-              przez kolejne etapy doświadczania presji — od pierwszego kontaktu,
-              przez próby radzenia sobie, aż po surową prawdę.
-            </p>
-          </div>
+        <div className="space-y-4 border-3 border-current p-6">
+          <p className="font-mono text-sm leading-relaxed">
+            Album opowiada o napięciach, które towarzyszą codziennemu życiu
+            współczesnych ludzi. Każdy utwór przedstawia inną formę presji, z
+            którą zmaga się Kasia, bohaterka całego albumu. Problemy w każdym
+            utworze mogą wydawać się drobne na pierwszy rzut oka, jednak
+            wszystkie razem tworzą emocjonalny ciężar, który wpływa na
+            poczucie własnej wartości.
+          </p>
+          <p className="font-mono text-sm leading-relaxed">
+            Celem albumu jest pokazanie, że nawet z pozoru podstawowe problemy,
+            które pozostają nierozwiązane, potrafią stworzyć w nas napięcie,
+            odciskające się na każdym dniu. Zamiast cieszyć się życiem, stale
+            zastanawiamy się, czy dobrze stosujemy się do niewidzialnych zasad
+            wykreowanych przez społeczeństwo.
+          </p>
+          <p className="font-mono text-sm leading-relaxed">
+            Postać kobiety w całym albumie ma na celu pokazanie pełnego
+            spektrum problemów, które nie mają przypisanych zaimków, a ich
+            paliwem napędowym często jest wizja niemożliwego do osiągnięcia
+            celu, jaki sobie wyznaczamy.
+          </p>
+          <p className="font-mono text-sm leading-relaxed">
+            Przez takie myślenie każdy dzień może zamienić się w szereg pytań o
+            to, czy jesteśmy wystarczający, a każda chwila spoczynku zamienia
+            się w koszmar, w którym ktoś nas właśnie wyprzedza.
+          </p>
         </div>
       </section>
 
-      {/* Song Structure Explanation */}
+      {/* Structure button */}
+      <section className="mb-16">
+        <a
+          href="#struktura"
+          className="inline-block border-3 border-current px-6 py-3 font-mono text-sm uppercase tracking-widest transition-colors hover:bg-foreground hover:text-background"
+        >
+          O STRUKTURZE UTWORÓW ↓
+        </a>
+      </section>
+
+      {/* Song List */}
       <section className="mb-16">
         <h2 className="mb-8 font-mono text-2xl font-bold uppercase tracking-widest">
-          STRUKTURA KAŻDEGO UTWORU
+          PRESJA
         </h2>
+        <SongList />
+      </section>
+
+      {/* Song Structure */}
+      <section id="struktura" className="scroll-mt-8">
+        <h2 className="mb-8 font-mono text-2xl font-bold uppercase tracking-widest">
+          STRUKTURA UTWORÓW
+        </h2>
+        <div className="mb-8 border-3 border-current p-6">
+          <p className="font-mono text-sm leading-relaxed">
+            Każdy utwór składa się z trzech pór dnia. Na początku mamy poranek,
+            który jest pierwszą materializacją presji. Tutaj pojawiają się
+            najbardziej podstawowe myśli i problemy, które automatycznie
+            przychodzą do głowy, bez namysłu. Druga część to popołudnie — w tym
+            czasie pojawia się najwięcej pytań związanych z sensem negatywnych
+            uczuć głównej bohaterki. Pod wieczór musi zostać podjęta decyzja.
+            Bohaterka albo wyrywa się z więzów presji, albo nie radzi sobie,
+            ponieważ za głęboko weszła ona w jej codzienne życie.
+          </p>
+        </div>
         <div className="grid gap-4 md:grid-cols-3">
           <div className="border-3 border-current p-6">
             <span className="mb-2 block font-mono text-4xl font-bold">I</span>
             <h3 className="mb-2 font-mono text-sm font-bold uppercase tracking-widest">
-              WPROWADZENIE
+              PORANEK
             </h3>
             <p className="font-mono text-sm leading-relaxed opacity-70">
-              Pierwsza zwrotka wprowadza w konkretny rodzaj presji. Opisuje
-              moment, gdy presja zaczyna się materializować i wkraczać w nasze
-              życie.
+              Poranek to moment pierwszego zetknięcia się z presją. Pojawia się
+              ona jeszcze zanim bohaterka w pełni „wejdzie" w dzień. Myśli są
+              szybkie, automatyczne i często nieuświadomione. To krótkie impulsy,
+              na pozór niewinne, ale od razu ustawiają ton całego dnia. Problemy
+              mają tu swoją najprostszą formę. Są jeszcze nienazwane, ale już
+              obecne i odczuwalne. To etap, w którym presja już zaczyna być
+              widoczna, a Kasia przyjmuje ją niemal bezrefleksyjnie.
             </p>
           </div>
           <div className="border-3 border-current p-6">
             <span className="mb-2 block font-mono text-4xl font-bold">II</span>
             <h3 className="mb-2 font-mono text-sm font-bold uppercase tracking-widest">
-              FASADA
+              POPOŁUDNIE
             </h3>
             <p className="font-mono text-sm leading-relaxed opacity-70">
-              Druga zwrotka opisuje, jak udajemy że radzimy sobie z presją.
-              Maska, którą zakładamy dla innych — próby normalizacji i
-              przetrwania.
+              Popołudnie to rozwinięcie napięcia. Presja staje się bardziej
+              wyraźna i zaczyna wpływać na sposób myślenia bohaterki. To moment
+              największej intensywności emocji — pojawia się natłok pytań,
+              wątpliwości i prób zrozumienia własnych uczuć. Kasia zaczyna
+              analizować to, co się z nią dzieje, ale jednocześnie jest coraz
+              bardziej zmęczona problemem. W tej części presja ujawnia się także
+              w konkretnych sytuacjach, przez które bohaterka zaczyna dostrzegać
+              jej realny wpływ na swoje życie.
             </p>
           </div>
           <div className="border-3 border-current p-6">
-            <span className="mb-2 block font-mono text-4xl font-bold">III</span>
+            <span className="mb-2 block font-mono text-4xl font-bold">
+              III
+            </span>
             <h3 className="mb-2 font-mono text-sm font-bold uppercase tracking-widest">
-              PRAWDA
+              WIECZÓR
             </h3>
             <p className="font-mono text-sm leading-relaxed opacity-70">
-              Trzecia zwrotka to surowa prawda. Jak naprawdę czujemy się pod
-              presją, gdy nikt nie patrzy. Bez filtrów i udawania.
+              Wieczór to moment konfrontacji i decyzji. Po całym dniu napięcia
+              bohaterka musi zmierzyć się z tym, co narosło. To etap najbardziej
+              refleksyjny. Kasia staje przed wyborem, czy spróbować wyrwać się
+              spod wpływu presji, czy poddać się jej, ponieważ jest już zbyt
+              silna i zakorzeniona w głowie Kasi. To także moment podsumowania
+              dnia, w którym napięcie albo znajduje ujście, albo zostaje
+              przeniesione dalej, pogłębiając stan bohaterki.
             </p>
           </div>
         </div>
-      </section>
-
-      {/* Song List */}
-      <section>
-        <h2 className="mb-8 font-mono text-2xl font-bold uppercase tracking-widest">
-          PRESJA
-        </h2>
-        <SongList />
       </section>
     </div>
   );

@@ -37,7 +37,7 @@ export default async function SongPage({ params }: SongPageProps) {
   const nextSong = currentIndex < songs.length - 1 ? songs[currentIndex + 1] : null;
 
   return (
-    <div className="mx-auto max-w-4xl px-6 py-12">
+    <div className="mx-auto max-w-4xl px-4 py-12 md:px-6">
       {/* Back link */}
       <Link
         href="/"
