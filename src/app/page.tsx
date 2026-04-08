@@ -48,13 +48,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Structure button */}
-      <section className="mb-16">
+      {/* Action buttons */}
+      <section className="mb-16 flex flex-wrap gap-4">
         <a
           href="#struktura"
           className="inline-block border-3 border-current px-6 py-3 font-mono text-sm uppercase tracking-widest transition-colors hover:bg-foreground hover:text-background"
         >
           O STRUKTURZE UTWORÓW ↓
+        </a>
+        <a
+          href="https://drive.google.com/drive/folders/1f7YsJ7YY3Bg4lVL4cOhpVvn61DoxdGLt?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block border-3 border-current bg-foreground px-6 py-3 font-mono text-sm uppercase tracking-widest text-background transition-colors hover:bg-background hover:text-foreground"
+        >
+          POBIERZ ALBUM HI-RES
         </a>
       </section>
 
