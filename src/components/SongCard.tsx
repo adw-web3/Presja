@@ -1,7 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { useRef, useState, useEffect } from "react";
+import { useLocale, useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import type { Song } from "@/data/songs";
 
 interface SongCardProps {
@@ -12,6 +13,9 @@ export function SongCard({ song }: SongCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
+  const t = useTranslations("SongCard");
+  const locale = useLocale();
+  const story = locale === "en" && song.storyEn ? song.storyEn : song.story;
 
   useEffect(() => {
     if (contentRef.current) {
@@ -54,13 +58,13 @@ export function SongCard({ song }: SongCardProps) {
       >
         <div ref={contentRef} className="border-t-3 border-current px-4 py-6 md:px-6">
           <p className="mb-6 font-mono text-sm leading-relaxed opacity-80">
-            {song.story}
+            {story}
           </p>
           <Link
             href={`/presja/${song.slug}`}
             className="inline-block border-3 border-current px-6 py-3 font-mono text-sm uppercase tracking-widest transition-colors hover:bg-foreground hover:text-background"
           >
-            ZOBACZ WIĘCEJ →
+            {t("more")}
           </Link>
         </div>
       </div>

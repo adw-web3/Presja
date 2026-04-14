@@ -1,13 +1,30 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 
-export const metadata: Metadata = {
-  title: "TwójSamuel | PRESJA",
-  description: "Poznaj TwójSamuela — artystę stojącego za albumem PRESJA.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Metadata.artist" });
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
-export default function ArtistPage() {
+export default async function ArtistPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("Artist");
+
   return (
     <div className="mx-auto max-w-4xl px-4 py-12 md:px-6">
       {/* Back link */}
@@ -15,7 +32,7 @@ export default function ArtistPage() {
         href="/"
         className="mb-8 inline-block font-mono text-sm uppercase tracking-widest opacity-70 transition-opacity hover:opacity-100"
       >
-        ← POWRÓT
+        {t("back")}
       </Link>
 
       {/* Header */}
@@ -42,29 +59,18 @@ export default function ArtistPage() {
       {/* Bio */}
       <section className="mb-12">
         <h2 className="mb-4 font-mono text-xl font-bold uppercase tracking-widest">
-          ARTYSTA
+          {t("bio.heading")}
         </h2>
         <div className="space-y-4 border-3 border-current p-6">
-          <p className="font-mono text-sm leading-relaxed">
-            TwójSamuel działa muzycznie od pięciu lat. W 2025 roku zorganizował
-            koncert pod własnym billboardem, a jego utwór o kryptowalutach
-            został zaprezentowany podczas jednego z ważniejszych wydarzeń
-            blockchainowych w Polsce przed publicznością liczącą ponad tysiąc
-            osób.
-          </p>
-          <p className="font-mono text-sm leading-relaxed">
-            Zawodowo jest social media ekspertem i ma na koncie milionowe
-            wyświetlenia w internecie. W 2026 roku postanowił świadomie
-            wykorzystać swoje doświadczenie, aby rozwijać własną drogę jako
-            artysta.
-          </p>
+          <p className="font-mono text-sm leading-relaxed">{t("bio.p1")}</p>
+          <p className="font-mono text-sm leading-relaxed">{t("bio.p2")}</p>
         </div>
       </section>
 
       {/* Streaming Links */}
       <section className="mb-12">
         <h2 className="mb-4 font-mono text-xl font-bold uppercase tracking-widest">
-          SŁUCHAJ
+          {t("listen")}
         </h2>
         <div className="flex flex-wrap gap-3">
           <a
@@ -121,7 +127,7 @@ export default function ArtistPage() {
       {/* Social Links */}
       <section className="mb-12">
         <h2 className="mb-4 font-mono text-xl font-bold uppercase tracking-widest">
-          OBSERWUJ
+          {t("follow")}
         </h2>
         <div className="flex flex-wrap gap-3">
           <a
@@ -154,17 +160,17 @@ export default function ArtistPage() {
       {/* Contact */}
       <section id="kontakt">
         <h2 className="mb-4 font-mono text-xl font-bold uppercase tracking-widest">
-          KONTAKT
+          {t("contact.heading")}
         </h2>
         <div className="border-3 border-current p-6">
           <p className="font-mono text-sm leading-relaxed">
-            <span className="opacity-70">MANAGEMENT:</span>{" "}
+            <span className="opacity-70">{t("contact.management")}</span>{" "}
             <a href="mailto:faustyna@twojapresja.pl" className="underline">
               faustyna@twojapresja.pl
             </a>
           </p>
           <p className="font-mono text-sm leading-relaxed">
-            <span className="opacity-70">ARTIST:</span>{" "}
+            <span className="opacity-70">{t("contact.artist")}</span>{" "}
             <a href="mailto:samuel@twojapresja.pl" className="underline">
               samuel@twojapresja.pl
             </a>

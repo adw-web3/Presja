@@ -1,9 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 
 export function ScrollToTop() {
   const [visible, setVisible] = useState(false);
+  const t = useTranslations("ScrollToTop");
 
   useEffect(() => {
     const onScroll = () => setVisible(window.scrollY > 400);
@@ -17,7 +19,7 @@ export function ScrollToTop() {
       className={`fixed bottom-6 right-6 z-50 border-3 border-current bg-background p-2 font-mono text-sm transition-all duration-300 hover:bg-foreground hover:text-background ${
         visible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0 pointer-events-none"
       }`}
-      aria-label="Wróć na górę"
+      aria-label={t("aria")}
     >
       ↑
     </button>

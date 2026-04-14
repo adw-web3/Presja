@@ -1,0 +1,90 @@
+{
+  "Metadata": {
+    "home": {
+      "title": "PRESJA | TwójSamuel",
+      "description": "Oficjalna strona albumu PRESJA artysty TwójSamuel. Posłuchaj, przeczytaj teksty i poznaj historię każdego utworu."
+    },
+    "artist": {
+      "title": "TwójSamuel | PRESJA",
+      "description": "Poznaj TwójSamuela — artystę stojącego za albumem PRESJA."
+    },
+    "song": {
+      "title": "{title} | PRESJA — TwójSamuel",
+      "notFound": "Utwór nie znaleziony"
+    }
+  },
+  "Nav": {
+    "artist": "ARTYSTA"
+  },
+  "Home": {
+    "hero": {
+      "subtitle": "TWÓJSAMUEL — 2026"
+    },
+    "about": {
+      "heading": "O ALBUMIE",
+      "p1": "Album opowiada o napięciach, które towarzyszą codziennemu życiu współczesnych ludzi. Każdy utwór przedstawia inną formę presji, z którą zmaga się Kasia, bohaterka całego albumu. Problemy w każdym utworze mogą wydawać się drobne na pierwszy rzut oka, jednak wszystkie razem tworzą emocjonalny ciężar, który wpływa na poczucie własnej wartości.",
+      "p2": "Celem albumu jest pokazanie, że nawet z pozoru podstawowe problemy, które pozostają nierozwiązane, potrafią stworzyć w nas napięcie, odciskające się na każdym dniu. Zamiast cieszyć się życiem, stale zastanawiamy się, czy dobrze stosujemy się do niewidzialnych zasad wykreowanych przez społeczeństwo.",
+      "p3": "Postać kobiety w całym albumie ma na celu pokazanie pełnego spektrum problemów, które nie mają przypisanych zaimków, a ich paliwem napędowym często jest wizja niemożliwego do osiągnięcia celu, jaki sobie wyznaczamy.",
+      "p4": "Przez takie myślenie każdy dzień może zamienić się w szereg pytań o to, czy jesteśmy wystarczający, a każda chwila spoczynku zamienia się w koszmar, w którym ktoś nas właśnie wyprzedza."
+    },
+    "cta": {
+      "structure": "O STRUKTURZE UTWORÓW ↓",
+      "download": "POBIERZ ALBUM HI-RES"
+    },
+    "songs": {
+      "heading": "PRESJA"
+    },
+    "structure": {
+      "heading": "STRUKTURA UTWORÓW",
+      "intro": "Każdy utwór składa się z trzech pór dnia. Na początku mamy poranek, który jest pierwszą materializacją presji. Tutaj pojawiają się najbardziej podstawowe myśli i problemy, które automatycznie przychodzą do głowy, bez namysłu. Druga część to popołudnie — w tym czasie pojawia się najwięcej pytań związanych z sensem negatywnych uczuć głównej bohaterki. Pod wieczór musi zostać podjęta decyzja. Bohaterka albo wyrywa się z więzów presji, albo nie radzi sobie, ponieważ za głęboko weszła ona w jej codzienne życie.",
+      "morning": {
+        "heading": "PORANEK",
+        "body": "Poranek to moment pierwszego zetknięcia się z presją. Pojawia się ona jeszcze zanim bohaterka w pełni „wejdzie\" w dzień. Myśli są szybkie, automatyczne i często nieuświadomione. To krótkie impulsy, na pozór niewinne, ale od razu ustawiają ton całego dnia. Problemy mają tu swoją najprostszą formę. Są jeszcze nienazwane, ale już obecne i odczuwalne. To etap, w którym presja już zaczyna być widoczna, a Kasia przyjmuje ją niemal bezrefleksyjnie."
+      },
+      "afternoon": {
+        "heading": "POPOŁUDNIE",
+        "body": "Popołudnie to rozwinięcie napięcia. Presja staje się bardziej wyraźna i zaczyna wpływać na sposób myślenia bohaterki. To moment największej intensywności emocji — pojawia się natłok pytań, wątpliwości i prób zrozumienia własnych uczuć. Kasia zaczyna analizować to, co się z nią dzieje, ale jednocześnie jest coraz bardziej zmęczona problemem. W tej części presja ujawnia się także w konkretnych sytuacjach, przez które bohaterka zaczyna dostrzegać jej realny wpływ na swoje życie."
+      },
+      "evening": {
+        "heading": "WIECZÓR",
+        "body": "Wieczór to moment konfrontacji i decyzji. Po całym dniu napięcia bohaterka musi zmierzyć się z tym, co narosło. To etap najbardziej refleksyjny. Kasia staje przed wyborem, czy spróbować wyrwać się spod wpływu presji, czy poddać się jej, ponieważ jest już zbyt silna i zakorzeniona w głowie Kasi. To także moment podsumowania dnia, w którym napięcie albo znajduje ujście, albo zostaje przeniesione dalej, pogłębiając stan bohaterki."
+      }
+    }
+  },
+  "Artist": {
+    "back": "← POWRÓT",
+    "bio": {
+      "heading": "ARTYSTA",
+      "p1": "TwójSamuel działa muzycznie od pięciu lat. W 2025 roku zorganizował koncert pod własnym billboardem, a jego utwór o kryptowalutach został zaprezentowany podczas jednego z ważniejszych wydarzeń blockchainowych w Polsce przed publicznością liczącą ponad tysiąc osób.",
+      "p2": "Zawodowo jest social media ekspertem i ma na koncie milionowe wyświetlenia w internecie. W 2026 roku postanowił świadomie wykorzystać swoje doświadczenie, aby rozwijać własną drogę jako artysta."
+    },
+    "listen": "SŁUCHAJ",
+    "follow": "OBSERWUJ",
+    "contact": {
+      "heading": "KONTAKT",
+      "management": "MANAGEMENT:",
+      "artist": "ARTIST:"
+    }
+  },
+  "Song": {
+    "back": "← POWRÓT DO LISTY",
+    "story": "HISTORIA",
+    "lyrics": "TEKST",
+    "downloadHiRes": "POBIERZ HI-RES"
+  },
+  "SongCard": {
+    "more": "ZOBACZ WIĘCEJ →"
+  },
+  "Footer": {
+    "contact": "KONTAKT"
+  },
+  "Theme": {
+    "toLight": "Przełącz na jasny motyw",
+    "toDark": "Przełącz na ciemny motyw",
+    "light": "JASNY",
+    "dark": "CIEMNY"
+  },
+  "ScrollToTop": {
+    "aria": "Wróć na górę"
+  }
+}

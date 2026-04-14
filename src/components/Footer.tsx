@@ -1,6 +1,9 @@
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 export function Footer() {
+  const t = useTranslations("Footer");
+  const tNav = useTranslations("Nav");
   return (
     <footer className="border-t-3 border-current">
       <div className="mx-auto max-w-6xl px-4 py-8 md:px-6">
@@ -42,10 +45,16 @@ export function Footer() {
                 TIKTOK
               </a>
               <Link
+                href="/artysta"
+                className="font-mono text-sm uppercase tracking-widest transition-opacity hover:opacity-70"
+              >
+                {tNav("artist")}
+              </Link>
+              <Link
                 href="/artysta#kontakt"
                 className="font-mono text-sm uppercase tracking-widest transition-opacity hover:opacity-70"
               >
-                KONTAKT
+                {t("contact")}
               </Link>
             </div>
           </div>

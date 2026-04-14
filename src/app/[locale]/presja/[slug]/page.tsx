@@ -1,40 +1,50 @@
 import { notFound } from "next/navigation";
-import Link from "next/link";
-import { getSongBySlug, getAllSongSlugs, songs } from "@/data/songs";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
+import { getSongBySlug, songs } from "@/data/songs";
 import { LyricsSection } from "@/components/LyricsSection";
 import { StreamingLinks } from "@/components/StreamingLinks";
 import { DownloadButton } from "@/components/DownloadButton";
+import { routing } from "@/i18n/routing";
 
 interface SongPageProps {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }
 
-export async function generateStaticParams() {
-  return getAllSongSlugs().map((slug) => ({ slug }));
+export function generateStaticParams() {
+  return routing.locales.flatMap((locale) =>
+    songs.map((s) => ({ locale, slug: s.slug }))
+  );
 }
 
 export async function generateMetadata({ params }: SongPageProps) {
-  const { slug } = await params;
+  const { locale, slug } = await params;
   const song = getSongBySlug(slug);
-  if (!song) return { title: "Utwór nie znaleziony" };
+  const t = await getTranslations({ locale, namespace: "Metadata.song" });
+  if (!song) return { title: t("notFound") };
 
+  const story = locale === "en" && song.storyEn ? song.storyEn : song.story;
   return {
-    title: `${song.title} | PRESJA — TwójSamuel`,
-    description: song.story,
+    title: t("title", { title: song.title }),
+    description: story,
   };
 }
 
 export default async function SongPage({ params }: SongPageProps) {
-  const { slug } = await params;
+  const { locale, slug } = await params;
+  setRequestLocale(locale);
   const song = getSongBySlug(slug);
 
   if (!song) {
     notFound();
   }
 
+  const t = await getTranslations("Song");
+  const story = locale === "en" && song.storyEn ? song.storyEn : song.story;
   const currentIndex = songs.findIndex((s) => s.slug === slug);
   const prevSong = currentIndex > 0 ? songs[currentIndex - 1] : null;
-  const nextSong = currentIndex < songs.length - 1 ? songs[currentIndex + 1] : null;
+  const nextSong =
+    currentIndex < songs.length - 1 ? songs[currentIndex + 1] : null;
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-12 md:px-6">
@@ -43,7 +53,7 @@ export default async function SongPage({ params }: SongPageProps) {
         href="/"
         className="mb-8 inline-block font-mono text-sm uppercase tracking-widest opacity-70 transition-opacity hover:opacity-100"
       >
-        ← POWRÓT DO LISTY
+        {t("back")}
       </Link>
 
       {/* Header */}
@@ -64,10 +74,10 @@ export default async function SongPage({ params }: SongPageProps) {
       {/* Story */}
       <section className="mb-12">
         <h2 className="mb-4 font-mono text-xl font-bold uppercase tracking-widest">
-          HISTORIA
+          {t("story")}
         </h2>
         <div className="border-3 border-current p-6">
-          <p className="font-mono text-sm leading-relaxed">{song.story}</p>
+          <p className="font-mono text-sm leading-relaxed">{story}</p>
         </div>
       </section>
 
@@ -82,7 +92,7 @@ export default async function SongPage({ params }: SongPageProps) {
       {/* Lyrics */}
       <section className="mb-12">
         <h2 className="mb-8 font-mono text-xl font-bold uppercase tracking-widest">
-          TEKST
+          {t("lyrics")}
         </h2>
         <LyricsSection lyrics={song.lyrics} />
       </section>

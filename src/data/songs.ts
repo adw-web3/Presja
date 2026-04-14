@@ -4,6 +4,7 @@ export interface Song {
   slug: string;
   featuring?: string;
   story: string;
+  storyEn?: string;
   lyrics: string;
   streamingLinks: {
     spotify?: string;
@@ -20,6 +21,7 @@ export const songs: Song[] = [
     title: "Preludium",
     slug: "preludium",
     story: `\u201EPreludium\u201D pokazuje \u017cycie w nat\u0142oku wielu r\u00f3\u017cnych presji pojawiaj\u0105cych si\u0119 i znikaj\u0105cych na r\u00f3\u017cnych etapach dnia, roku i \u017cycia. To obraz chaosu my\u015bli powstaj\u0105cego wtedy, gdy kilka napi\u0119\u0107 nak\u0142ada si\u0119 na siebie jednocze\u015bnie. Z pozoru drobne rzeczy zaczynaj\u0105 tworzy\u0107 realny ci\u0119\u017car, trudny do zignorowania. Utw\u00f3r oddaje stan przeci\u0105\u017cenia i zagubienia, dobrze znany ka\u017cdemu z nas. To bezpo\u015brednia zapowied\u017a kolejnych utwor\u00f3w i presji, kt\u00f3re b\u0119d\u0105 si\u0119 stopniowo ujawnia\u0107.`,
+    storyEn: `"Preludium" shows life in the middle of many different pressures appearing and disappearing at different stages of the day, the year and life itself. It is an image of the chaos of thoughts that emerges when several tensions overlap at once. Seemingly small things begin to create a real weight, hard to ignore. The track captures a state of overload and confusion familiar to all of us. It is a direct introduction to the songs and pressures that will gradually reveal themselves throughout the album.`,
     lyrics: `Ref.
 
 Kiedy b\u0119dzie moja kolej
@@ -81,6 +83,7 @@ Presja`,
     title: "Pracy",
     slug: "pracy",
     story: `Utw\u00f3r skupia si\u0119 na presji zwi\u0105zanej z prac\u0105, rozwojem i por\u00f3wnywaniem si\u0119 do innych. Kasia mierzy si\u0119 z oczekiwaniami awansu, wi\u0119kszych zarobk\u00f3w i \u201Elepszego \u017cycia\u201D, jednocze\u015bnie czuj\u0105c stagnacj\u0119 i zm\u0119czenie. Codzienno\u015b\u0107 zamienia si\u0119 w powtarzalny schemat, w kt\u00f3rym motywacja miesza si\u0119 z frustracj\u0105. Por\u00f3wnania do r\u00f3wie\u015bnik\u00f3w i medialnych sukces\u00f3w tylko pog\u0142\u0119biaj\u0105 poczucie, \u017ce jest w tyle. To historia o wy\u015bcigu, w kt\u00f3rym im szybciej biegniesz, tym trudniej zobaczy\u0107 sens.`,
+    storyEn: `The track focuses on the pressure tied to work, growth and comparing yourself to others. Kasia faces expectations of promotions, bigger paychecks and "a better life," while at the same time feeling stagnant and tired. Everyday life turns into a repetitive pattern where motivation gets mixed with frustration. Comparisons with peers and media success stories only deepen the feeling of being left behind. It's a story about a race in which the faster you run, the harder it becomes to see the point.`,
     lyrics: `Zwrotka 1.
 
 To nie czas
@@ -191,6 +194,7 @@ Chce mie\u0107 \u017cycie jak oprah`,
     title: "Czasu",
     slug: "czasu",
     story: `Utw\u00f3r pokazuje presj\u0119 ci\u0105g\u0142ych bod\u017ac\u00f3w w postaci powiadomie\u0144 na zegarku. Za ka\u017cdym razem, gdy bohaterka chce sprawdzi\u0107 godzin\u0119, ekran zas\u0142aniaj\u0105 kolejne komunikaty. Nat\u0142ok informacji, kt\u00f3ry sama sobie stworzy\u0142a r\u00f3\u017cnorakimi aplikacjami, zaczyna przejmowa\u0107 kontrol\u0119 nad jej codzienno\u015bci\u0105. Brak chwili ciszy sprawia, \u017ce trudno si\u0119 zatrzyma\u0107 i z\u0142apa\u0107 oddech, a czas zaczyna przecieka\u0107 przez palce, niezauwa\u017calnie.`,
+    storyEn: `The track shows the pressure of constant stimuli in the form of smartwatch notifications. Every time the protagonist wants to check the time, her screen is covered by another message. The flood of information she herself created through all kinds of apps starts to take control of her daily life. The lack of a single quiet moment makes it hard to stop and catch a breath, and time begins to slip through her fingers unnoticed.`,
     lyrics: `Ref.
 
 Prosz\u0119 ciszej
@@ -296,6 +300,7 @@ Na instagrama wpada like`,
     title: "Finansowa",
     slug: "finansowa",
     story: `Utw\u00f3r skupia si\u0119 na presji finansowej i potrzebie posiadania rzeczy, kt\u00f3re definiuj\u0105 status. Kasia balansuje mi\u0119dzy realnymi mo\u017cliwo\u015bciami a ch\u0119ci\u0105 \u017cycia na poziomie, kt\u00f3ry widzi u innych. Zakupy przestaj\u0105 by\u0107 potrzeb\u0105, a zaczynaj\u0105 by\u0107 pr\u00f3b\u0105 dopasowania si\u0119 i nad\u0105\u017cania za trendami. Z czasem pojawia si\u0119 pytanie, czy to motywacja do rozwoju, czy ju\u017c presja, kt\u00f3ra przejmuje kontrol\u0119. To historia o tym, jak \u0142atwo pomyli\u0107 w\u0142asne potrzeby z tym, co narzuca \u015bwiat.`,
+    storyEn: `The track focuses on financial pressure and the need to own things that define status. Kasia balances between what she can really afford and a desire to live at the level she sees in others. Shopping stops being a need and becomes an attempt to fit in and keep up with trends. Over time a question arises: is it still motivation to grow, or has it become a pressure that takes over? It's a story about how easy it is to confuse your own needs with the ones imposed by the world around you.`,
     lyrics: `Zwrotka 0.
 
 To kolejna noc najlepiej wysypia materac od DUX nie taki jak ja mam
@@ -418,6 +423,7 @@ P\u00f3\u0142 wyp\u0142aty leci na to i to i to (toy, toi toi i to)`,
     title: "Spo\u0142eczna",
     slug: "spoleczna",
     story: `Utw\u00f3r pokazuje presj\u0119 \u017cycia w social mediach i potrzeb\u0119 ci\u0105g\u0142ego bycia widzianym. Kasia zaczyna traktowa\u0107 codzienno\u015b\u0107 jak content, a w\u0142asne \u017cycie jak projekt do pokazania innym. Granica mi\u0119dzy byciem sob\u0105 a kreowaniem wizerunku stopniowo si\u0119 zaciera. Por\u00f3wnania, lajki i obserwacja innych nap\u0119dzaj\u0105 spiral\u0119 napi\u0119cia i poczucie, \u017ce wci\u0105\u017c trzeba wi\u0119cej. To historia o tym, jak \u0142atwo zgubi\u0107 siebie w \u015bwiecie, w kt\u00f3rym wszystko jest na pokaz.`,
+    storyEn: `The track shows the pressure of living on social media and the need to be constantly seen. Kasia starts treating her everyday life as content and her own life as a project to present to others. The line between being herself and crafting an image gradually blurs. Comparisons, likes and watching other people fuel a spiral of tension and the feeling that you always need more. It's a story about how easy it is to lose yourself in a world where everything is staged for others.`,
     lyrics: `Zwrotka 1.
 
 Ludzie uton\u0119li w lajkach postach to nie vibe
@@ -523,6 +529,7 @@ Losowe powiadomienia`,
     title: "Interludium",
     slug: "interludium",
     story: `Utw\u00f3r skupia si\u0119 na pr\u00f3bie wyhamowania i pouk\u0142adania nagromadzonej presji. Kasia zaczyna zauwa\u017ca\u0107, jak bardzo wci\u0105gn\u0119\u0142o j\u0105 ci\u0105g\u0142e \u201Ewi\u0119cej\u201D i potrzeba levelowania \u017cycia. Pojawia si\u0119 refleksja, \u017ce nie ilo\u015b\u0107, a jako\u015b\u0107 ma realne znaczenie. Mimo tego nadal balansuje mi\u0119dzy ch\u0119ci\u0105 zmiany a starymi nawykami. To moment pierwszej pr\u00f3by odzyskania kontroli i z\u0142apania dystansu.`,
+    storyEn: `The track focuses on an attempt to slow down and make sense of the pressure that has built up. Kasia begins to notice how deeply she has been pulled into the constant "more" and the need to keep leveling up her life. A reflection appears that it's quality, not quantity, that really matters. Even so, she is still balancing between the desire to change and old habits. It's the first moment of trying to regain control and gain some distance.`,
     lyrics: `Ref.
 
 Przyszed\u0142 czas ju\u017c
@@ -569,6 +576,7 @@ Chce odpocz\u0105\u0107 na wakacjach`,
     title: "J\u0119zyka",
     slug: "jezyka",
     story: `Utw\u00f3r porusza temat presji zwi\u0105zanej z j\u0119zykiem, trendami i sposobem komunikacji. Kasia realnie nie rozumie cz\u0119\u015bci anglicyzm\u00f3w, ale czuje potrzeb\u0119 u\u017cywania ich, \u017ceby dopasowa\u0107 si\u0119 do otoczenia. Granica mi\u0119dzy autentyczno\u015bci\u0105 a kreacj\u0105 zaczyna si\u0119 zaciera\u0107. Bohaterka czuje niemoc i ma wra\u017cenie, \u017ce nie ma na to wp\u0142ywu. Zaczyna wierzy\u0107, \u017ce jedynym wyj\u015bciem jest dostosowanie si\u0119 i oczekiwanie na zmian\u0119 \u201Emody\u201D.`,
+    storyEn: `The track deals with the pressure tied to language, trends and the way people communicate. Kasia doesn't really understand many of the anglicisms she hears, but she feels the need to use them in order to fit in. The line between authenticity and performance starts to blur. She feels powerless and gets the impression that she has no control over it. She starts to believe that the only way out is to adapt and wait for the "fashion" to change.`,
     lyrics: `Ref.
 
 Me, oh my
@@ -670,6 +678,7 @@ M\u00f3wi\u0119 po to by wygl\u0105da\u0107 (co to w og\u00f3le znaczy?)`,
     title: "Rodziny",
     slug: "rodziny",
     story: `Utw\u00f3r porusza temat presji dorastania i ci\u0105g\u0142ego poczucia, \u017ce trzeba chcie\u0107 wi\u0119cej. Refren, inspirowany klimatem \u201EWszystko, czego dzi\u015b chc\u0119\u201D Izabeli Trojanowskiej, pokazuje zderzenie marze\u0144 z realnym napi\u0119ciem i oczekiwaniami. Motyw \u201Eoderwać wzd\u0142u\u017c linii\u201D staje si\u0119 symbolem momentu, w kt\u00f3rym powinni\u015bmy \u201Ezrobi\u0107 wszystko dobrze\u201D i w ko\u0144cu dorosn\u0105\u0107. Zamiast spokoju pojawia si\u0119 jednak kolejne pytanie \u2014 czy to naprawd\u0119 nasz wyb\u00f3r, czy tylko odpowied\u017a na presj\u0119. To historia o \u017cyciu, w kt\u00f3rym ka\u017cdy kolejny etap nie daje ulgi, tylko zmienia form\u0119 napi\u0119cia.`,
+    storyEn: `The track touches on the pressure of growing up and the constant feeling that you have to want more. The refrain, inspired by the vibe of "Wszystko, czego dziś chcę" by Izabela Trojanowska, captures the collision of dreams with real tension and expectations. The motif of "tearing along the line" becomes a symbol of the moment in which we should "do everything right" and finally grow up. Instead of peace, another question appears — is this really our choice, or just a response to pressure? It's a story about a life in which every next stage brings no relief, only changes the form of the tension.`,
     lyrics: `Zwrotka 1.1
 
 (obu\u017a si\u0119)
@@ -762,6 +771,7 @@ czego dzi\u015b chcesz`,
     title: "Podr\u00f3\u017cy",
     slug: "podrozy",
     story: `Utw\u00f3r porusza temat presji do\u015bwiadcze\u0144 i \u017cycia \u201Ena maksa\u201D, nap\u0119dzanego przez FOMO i trendy. Kasia chce prze\u017cy\u0107 wszystko, podr\u00f3\u017ce, smaki i miejsca, ale z czasem zaczyna si\u0119 w tym gubi\u0107. Zamiast wolno\u015bci pojawia si\u0119 po\u015bpiech i poczucie, \u017ce trzeba robi\u0107 wi\u0119cej, zobaczy\u0107 wi\u0119cej i do\u015bwiadczy\u0107 jak najwi\u0119cej. Nawet odpoczynek przestaje by\u0107 naturalny, bo staje si\u0119 kolejnym punktem do zaliczenia, w kt\u00f3ry mimo \u017ce to wakacje nie op\u0142aca si\u0119 inwestowa\u0107 czasu. To historia o tym, jak \u0142atwo pomyli\u0107 prawdziwe prze\u017cycia z presj\u0105 ich kolekcjonowania.`,
+    storyEn: `The track deals with the pressure of experiences and living "to the max," fuelled by FOMO and trends. Kasia wants to live through everything — travels, flavours and places — but over time she starts to get lost in it. Instead of freedom there is hurry and the feeling that you need to do more, see more and experience as much as possible. Even rest stops feeling natural, because it becomes another item on the list, one that, despite being a vacation, isn't worth investing time in. It's a story about how easy it is to confuse real experiences with the pressure of collecting them.`,
     lyrics: `Ref.
 
 Chce zje\u015b\u0107 pizze w Mediolanie
@@ -870,6 +880,7 @@ W Adriatyku k\u0105pa\u0107 si\u0119 pieprzy\u0107 presje`,
     title: "Zdrowego \u017cycia",
     slug: "zdrowego-zycia",
     story: `Utw\u00f3r porusza temat presji \u017cycia \u201Ezdrowo\u201D i ci\u0105g\u0142ego doskonalenia siebie. Kasia pr\u00f3buje stosowa\u0107 wszystkie zasady i dobre nawyki, ale z czasem zaczyna odczuwa\u0107 ich ci\u0119\u017car. Zamiast r\u00f3wnowagi pojawia si\u0119 kontrola i poczucie, \u017ce zawsze mo\u017cna robi\u0107 wi\u0119cej. Ka\u017cda kolejna rada i trend zamienia si\u0119 w obowi\u0105zek, kt\u00f3ry zamiast pomaga\u0107 zaczyna przyt\u0142acza\u0107. To historia o tym, jak dbanie o siebie mo\u017ce sta\u0107 si\u0119 kolejn\u0105 form\u0105 presji.`,
+    storyEn: `The track deals with the pressure of living "healthily" and constantly improving yourself. Kasia tries to follow all the rules and good habits, but over time begins to feel their weight. Instead of balance there is control and the feeling that you can always do more. Every new piece of advice and every new trend turns into an obligation that, instead of helping, starts to become overwhelming. It's a story about how taking care of yourself can become just another form of pressure.`,
     lyrics: `Ref.
 
 Powiedz jak \u017cy\u0107 zdrowo
@@ -974,6 +985,7 @@ Po prostu \u017cyj zdrowo`,
     title: "To ostatnie ludium",
     slug: "to-ostatnie-ludium",
     story: `Utw\u00f3r porusza temat bezradno\u015bci i potrzeby wsparcia w \u015bwiecie pe\u0142nym presji. Kasia czuje, \u017ce powinna radzi\u0107 sobie sama, ale jednocze\u015bnie nie potrafi unie\u015b\u0107 wszystkiego w pojedynk\u0119. To moment, w kt\u00f3rym wszystkie presje z ca\u0142ego albumu nak\u0142adaj\u0105 si\u0119 na siebie. Pojawia si\u0119 wewn\u0119trzny konflikt mi\u0119dzy potrzeb\u0105 niezale\u017cno\u015bci a pragnieniem, \u017ceby kto\u015b j\u0105 uratowa\u0142. To najbardziej intymny punkt historii, w kt\u00f3rym napi\u0119cie osi\u0105ga swoje maksimum.`,
+    storyEn: `The track touches on helplessness and the need for support in a world full of pressure. Kasia feels she should handle everything on her own, but at the same time can't carry it all alone. This is the moment when all the pressures from the entire album overlap. An inner conflict arises between the need for independence and the longing for someone to save her. It is the most intimate point of the story, where tension reaches its peak.`,
     lyrics: `Zwrotka 1.
 
 Nie umiem sama

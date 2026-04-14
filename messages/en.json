@@ -1,0 +1,90 @@
+{
+  "Metadata": {
+    "home": {
+      "title": "PRESJA | TwójSamuel",
+      "description": "The official website of the album PRESJA by TwójSamuel. Listen, read the lyrics and explore the story behind every track."
+    },
+    "artist": {
+      "title": "TwójSamuel | PRESJA",
+      "description": "Meet TwójSamuel — the artist behind the album PRESJA."
+    },
+    "song": {
+      "title": "{title} | PRESJA — TwójSamuel",
+      "notFound": "Track not found"
+    }
+  },
+  "Nav": {
+    "artist": "ARTIST"
+  },
+  "Home": {
+    "hero": {
+      "subtitle": "TWÓJSAMUEL — 2026"
+    },
+    "about": {
+      "heading": "ABOUT THE ALBUM",
+      "p1": "The album tells the story of the tensions that run through the everyday lives of modern people. Each track portrays a different form of pressure faced by Kasia, the protagonist of the whole record. The problems in each song may seem minor at first glance, yet together they create an emotional weight that affects one's self-worth.",
+      "p2": "The aim of the album is to show that even seemingly basic, unresolved problems can build a tension that leaves its mark on every day. Instead of enjoying life, we constantly wonder whether we're following invisible rules set by society well enough.",
+      "p3": "The female protagonist running through the album is meant to show the full spectrum of problems that are not tied to any pronoun, and whose fuel is often the vision of an unreachable goal we set for ourselves.",
+      "p4": "Through this kind of thinking, every day can turn into a string of questions about whether we are enough, and every moment of rest becomes a nightmare in which someone is overtaking us."
+    },
+    "cta": {
+      "structure": "ABOUT THE TRACK STRUCTURE ↓",
+      "download": "DOWNLOAD HI-RES ALBUM"
+    },
+    "songs": {
+      "heading": "PRESJA"
+    },
+    "structure": {
+      "heading": "TRACK STRUCTURE",
+      "intro": "Each track is built from three times of day. First comes the morning — the first materialisation of pressure. This is where the most basic thoughts and problems surface, the ones that come to mind automatically, without a second thought. The second part is the afternoon — this is when the most questions about the meaning of the protagonist's negative feelings appear. By the evening a decision has to be made. The protagonist either breaks free from the grip of pressure, or she can't cope, because it has worked its way too deep into her daily life.",
+      "morning": {
+        "heading": "MORNING",
+        "body": "The morning is the moment of first contact with pressure. It appears even before the protagonist fully 'enters' the day. Thoughts are fast, automatic and often unconscious — short impulses, seemingly innocent, yet immediately setting the tone of the whole day. Problems show up here in their simplest form. They are not yet named, but already present and felt. It is the stage where pressure is already becoming visible, and Kasia takes it on almost without reflection."
+      },
+      "afternoon": {
+        "heading": "AFTERNOON",
+        "body": "The afternoon is where the tension unfolds. Pressure becomes more distinct and begins to shape the way the protagonist thinks. It is the moment of the most intense emotions — a flood of questions, doubts and attempts to understand one's own feelings. Kasia starts analysing what is happening to her, while at the same time growing more tired of the problem. In this part, pressure also reveals itself in concrete situations through which the protagonist begins to see its real impact on her life."
+      },
+      "evening": {
+        "heading": "EVENING",
+        "body": "The evening is the moment of confrontation and decision. After a whole day of tension, the protagonist has to face what has built up. It is the most reflective stage. Kasia stands before a choice — to try to break free from the influence of pressure, or to give in to it, because it is already too strong and too rooted in her head. It is also a summary of the day, in which tension either finds release or is carried further, deepening her state."
+      }
+    }
+  },
+  "Artist": {
+    "back": "← BACK",
+    "bio": {
+      "heading": "ARTIST",
+      "p1": "TwójSamuel has been active in music for five years. In 2025 he organised a concert under his own billboard, and his track about cryptocurrencies was presented at one of the most important blockchain events in Poland, in front of an audience of over a thousand people.",
+      "p2": "Professionally he is a social media expert with millions of views online. In 2026 he decided to consciously use his experience to develop his own path as an artist."
+    },
+    "listen": "LISTEN",
+    "follow": "FOLLOW",
+    "contact": {
+      "heading": "CONTACT",
+      "management": "MANAGEMENT:",
+      "artist": "ARTIST:"
+    }
+  },
+  "Song": {
+    "back": "← BACK TO THE LIST",
+    "story": "STORY",
+    "lyrics": "LYRICS",
+    "downloadHiRes": "DOWNLOAD HI-RES"
+  },
+  "SongCard": {
+    "more": "SEE MORE →"
+  },
+  "Footer": {
+    "contact": "CONTACT"
+  },
+  "Theme": {
+    "toLight": "Switch to light theme",
+    "toDark": "Switch to dark theme",
+    "light": "LIGHT",
+    "dark": "DARK"
+  },
+  "ScrollToTop": {
+    "aria": "Back to top"
+  }
+}
