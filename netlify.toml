@@ -1,11 +1,11 @@
 [[redirects]]
   from = "https://twojapresja.pl/*"
-  to = "https://twojsamuel.pl/:splat"
+  to = "https://twojsamuel.pl/"
   status = 301
   force = true
 
 [[redirects]]
   from = "https://www.twojapresja.pl/*"
-  to = "https://twojsamuel.pl/:splat"
+  to = "https://twojsamuel.pl/"
   status = 301
   force = true
